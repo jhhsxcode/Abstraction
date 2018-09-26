@@ -14,6 +14,7 @@
 		4780151C215BAD7B008CCCD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4780151A215BAD7B008CCCD1 /* LaunchScreen.storyboard */; };
 		47801528215BB124008CCCD1 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801527215BB124008CCCD1 /* DrawView.swift */; };
 		4780152C215BF4BC008CCCD1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780152B215BF4BC008CCCD1 /* SecondViewController.swift */; };
+		4CCE4271215C0E23002BF39D /* Decagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE4270215C0E23002BF39D /* Decagon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4780151D215BAD7B008CCCD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47801527215BB124008CCCD1 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		4780152B215BF4BC008CCCD1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4CCE4270215C0E23002BF39D /* Decagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decagon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				47801511215BAD77008CCCD1 /* AppDelegate.swift */,
 				47801513215BAD77008CCCD1 /* ViewController.swift */,
 				4780152B215BF4BC008CCCD1 /* SecondViewController.swift */,
+				4CCE4270215C0E23002BF39D /* Decagon.swift */,
 				47801527215BB124008CCCD1 /* DrawView.swift */,
 				47801515215BAD77008CCCD1 /* Main.storyboard */,
 				47801518215BAD7B008CCCD1 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				47801514215BAD77008CCCD1 /* ViewController.swift in Sources */,
 				47801512215BAD77008CCCD1 /* AppDelegate.swift in Sources */,
+				4CCE4271215C0E23002BF39D /* Decagon.swift in Sources */,
 				4780152C215BF4BC008CCCD1 /* SecondViewController.swift in Sources */,
 				47801528215BB124008CCCD1 /* DrawView.swift in Sources */,
 			);
