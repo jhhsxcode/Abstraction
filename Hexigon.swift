@@ -8,6 +8,6 @@
 
 import UIKit
 
-class Hexaigon {
+class Hexigon {
     
 }
