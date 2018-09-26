@@ -14,6 +14,7 @@
 		4780151C215BAD7B008CCCD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4780151A215BAD7B008CCCD1 /* LaunchScreen.storyboard */; };
 		47801528215BB124008CCCD1 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801527215BB124008CCCD1 /* DrawView.swift */; };
 		4780152C215BF4BC008CCCD1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780152B215BF4BC008CCCD1 /* SecondViewController.swift */; };
+		DEEE2B25215C0EA4007E5FEB /* Hexaigon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE2B24215C0EA4007E5FEB /* Hexaigon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4780151D215BAD7B008CCCD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47801527215BB124008CCCD1 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		4780152B215BF4BC008CCCD1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DEEE2B24215C0EA4007E5FEB /* Hexaigon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexaigon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		47801505215BAD77008CCCD1 = {
 			isa = PBXGroup;
 			children = (
+				DEEE2B24215C0EA4007E5FEB /* Hexaigon.swift */,
 				47801510215BAD77008CCCD1 /* Abstraction */,
 				4780150F215BAD77008CCCD1 /* Products */,
 			);
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEE2B25215C0EA4007E5FEB /* Hexaigon.swift in Sources */,
 				47801514215BAD77008CCCD1 /* ViewController.swift in Sources */,
 				47801512215BAD77008CCCD1 /* AppDelegate.swift in Sources */,
 				4780152C215BF4BC008CCCD1 /* SecondViewController.swift in Sources */,
