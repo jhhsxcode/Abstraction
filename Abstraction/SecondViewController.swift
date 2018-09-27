@@ -14,7 +14,7 @@ class SecondViewController: UIViewController {
 //    var triangle: Triangle?
 //    var quadrilateral: Quadrilateral?
 //    var pentagon: Pentagon?
-//    var hexigon: Hexigon?
+//    var hexagon: Hexagon?
 //    var heptagon: Heptagon?
 //    var octagon: Octagon?
 //    var nonagon: Nonagon?
@@ -37,7 +37,7 @@ class SecondViewController: UIViewController {
         if titleOfButtonPressed == "Pentagon" {
             
         }
-        if titleOfButtonPressed == "Hexigon" {
+        if titleOfButtonPressed == "Hexagon" {
             
         }
         if titleOfButtonPressed == "Heptagon" {

@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 //    var triangle: Triangle!
 //    var quadrilateral: Quadrilateral!
 //    var pentagon: Pentagon!
-//    var hexigon: Hexigon!
+//    var hexagon: Hexagon!
 //    var heptagon: Heptagon!
 //    var octagon: Octagon!
 //    var nonagon: Nonagon!
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         
         } else if titleOfButtonPressed == "Pentagon" {
             
-        } else if titleOfButtonPressed == "Hexigon" {
+        } else if titleOfButtonPressed == "Hexagon" {
             
         } else if titleOfButtonPressed == "Heptagon" {
             
@@ -72,8 +72,8 @@ class ViewController: UIViewController {
 //        if titleOfButtonPressed == "Pentagon" {
 //            nvc.pentagon = pentagon
 //        }
-//        if titleOfButtonPressed == "Hexigon" {
-//            nvc.hexigon = hexigon
+//        if titleOfButtonPressed == "Hexagon" {
+//            nvc.hexagon = hexagon
 //        }
 //        if titleOfButtonPressed == "Heptagon" {
 //            nvc.heptagon = heptagon
