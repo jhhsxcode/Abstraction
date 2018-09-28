@@ -36,6 +36,14 @@ class SecondViewController: UIViewController {
         }
         if titleOfButtonPressed == "Pentagon" {
             
+            
+            
+            
+            
+            
+            
+            
+            
         }
         if titleOfButtonPressed == "Hexagon" {
             

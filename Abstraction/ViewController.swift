@@ -41,6 +41,10 @@ class ViewController: UIViewController {
         
         } else if titleOfButtonPressed == "Pentagon" {
             
+            
+            
+            
+            
         } else if titleOfButtonPressed == "Hexagon" {
             
         } else if titleOfButtonPressed == "Heptagon" {
