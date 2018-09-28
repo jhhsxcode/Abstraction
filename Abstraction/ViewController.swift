@@ -38,6 +38,12 @@ class ViewController: UIViewController {
         } else if titleOfButtonPressed == "Triangle"{
             
         } else if titleOfButtonPressed == "Quadrilateral" {
+            var quadpoints = [CGPoint]()
+            for index in 1...4{
+                let xpoint = xValuesTextfields[index].text
+                let ypoint = yValuesTextfields[index].text
+                quadpoints.append(CGPoint(x: (xpoint as! NSString).doubleValue, y: (ypoint as! NSString).doubleValue))
+            }
         
         } else if titleOfButtonPressed == "Pentagon" {
             
