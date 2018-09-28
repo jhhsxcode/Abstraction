@@ -44,6 +44,21 @@ class ViewController: UIViewController {
         } else if titleOfButtonPressed == "Hexagon" {
             
         } else if titleOfButtonPressed == "Heptagon" {
+            var heptagonIndex = 0
+            for xVertices in xValuesTextfields {
+                let xVerticeText = xVertices.text
+                let xVerticeInt = Int(xVerticeText!)
+                heptagonIndex += 1
+                print(xVerticeInt!)
+            }
+            heptagonIndex = 0
+            for yVertices in yValuesTextfields {
+                let yVerticeText = yVertices.text
+                let yVerticeInt = Int(yVerticeText!)
+                heptagonIndex += 1
+                print(yVerticeInt!)
+            }
+
             
         } else if titleOfButtonPressed == "Octagon" {
             
