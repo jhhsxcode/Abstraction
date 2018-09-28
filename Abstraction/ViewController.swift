@@ -81,6 +81,54 @@ class ViewController: UIViewController {
         } else if titleOfButtonPressed == "Octagon" {
             
         } else if titleOfButtonPressed == "Nonagon" {
+            for xCoordinates in xValuesTextfields {
+                let xCoordinateText = xCoordinates.text
+                let xCoordinateInteger = Int(xCoordinateText!)
+                nonagon.nv1.0 = xCoordinateInteger!
+                
+            }
+            for yCoordinates in yValuesTextfields {
+                let yCoordinateText = yCoordinates.text
+                let yCoordinateInteger = Int(yCoordinateText!)
+                nonagon.nv1.1 = yCoordinateInteger!
+            }
+//            let nonagonShape = Nonagon()
+//            let xOne = xValuesTextfields[0]
+//            let xTwo = xValuesTextfields[1]
+//            let xThree = xValuesTextfields[2]
+//            let xFour = xValuesTextfields[3]
+//            let xFive = xValuesTextfields[4]
+//            let xSix = xValuesTextfields[5]
+//            let xSeven = xValuesTextfields[6]
+//            let xEight = xValuesTextfields[7]
+//            let xNine = xValuesTextfields[8]
+//            let yOne = yValuesTextfields[0]
+//            let yTwo = yValuesTextfields[1]
+//            let yThree = yValuesTextfields[2]
+//            let yFour = yValuesTextfields[3]
+//            let yFive = yValuesTextfields[4]
+//            let ySix = yValuesTextfields[5]
+//            let ySeven = yValuesTextfields[6]
+//            let yEight = yValuesTextfields[7]
+//            let yNine = yValuesTextfields[8]
+//            nonagonShape.nv1.0 == Int(xOne.text!)
+//            nonagonShape.nv1.1 == Int(yOne.text!)
+//            nonagonShape.nv2.0 == Int(xTwo.text!)
+//            nonagonShape.nv2.1 == Int(yTwo.text!)
+//            nonagonShape.nv3.0 == Int(xThree.text!)
+//            nonagonShape.nv3.1 == Int(yThree.text!)
+//            nonagonShape.nv4.0 == Int(xFour.text!)
+//            nonagonShape.nv4.1 == Int(yFour.text!)
+//            nonagonShape.nv5.0 == Int(xFive.text!)
+//            nonagonShape.nv5.1 == Int(yFive.text!)
+//            nonagonShape.nv6.0 == Int(xSix.text!)
+//            nonagonShape.nv6.1 == Int(ySix.text!)
+//            nonagonShape.nv7.0 == Int(xSeven.text!)
+//            nonagonShape.nv7.1 == Int(ySeven.text!)
+//            nonagonShape.nv8.0 == Int(xEight.text!)
+//            nonagonShape.nv8.1 == Int(yEight.text!)
+//            nonagonShape.nv9.0 == Int(xNine.text!)
+//            nonagonShape.nv9.1 == Int(yNine.text!)
             
         } else {
             
