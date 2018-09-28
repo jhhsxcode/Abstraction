@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var xValuesTextfields: [UITextField]!
     @IBOutlet var yValuesTextfields: [UITextField]!
+    @IBOutlet weak var segmentedController: UISegmentedControl!
     
     var line: Line!
     var triangle: Triangle!
@@ -23,13 +24,22 @@ class ViewController: UIViewController {
     var octagon: Octagon!
     var nonagon: Nonagon!
     var decagon: Decagon!
-    
+    var currentColor: UIColor = UIColor()
+    let colors: [UIColor] = [.blue,.green,.white,.yellow,.cyan,.purple]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        var counter = 0
+        for view in segmentedController.subviews {
+            view.backgroundColor = colors[counter]
+            counter += 1
+        }
     }
 
+    @IBAction func whenSegmentChanged(_ sender: UISegmentedControl) {
+        currentColor = colors[sender.selectedSegmentIndex]
+    }
+    
     @IBAction func whenButtonPressed(_ sender: UIButton) {
         let titleOfButtonPressed = sender.titleLabel?.text
         
@@ -98,4 +108,3 @@ class ViewController: UIViewController {
     }
     
 }
-
