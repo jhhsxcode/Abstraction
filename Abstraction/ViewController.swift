@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var xValuesTextfields: [UITextField]!
     @IBOutlet var yValuesTextfields: [UITextField]!
+    @IBOutlet weak var segmentedController: UISegmentedControl!
     
     var line: Line!
     var triangle: Triangle!
@@ -23,13 +24,22 @@ class ViewController: UIViewController {
     var octagon: Octagon!
     var nonagon: Nonagon!
     var decagon: Decagon!
-    
+    var currentColor: UIColor = UIColor()
+    let colors: [UIColor] = [.blue,.green,.white,.yellow,.cyan,.purple]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        var counter = 0
+        for view in segmentedController.subviews {
+            view.backgroundColor = colors[counter]
+            counter += 1
+        }
     }
 
+    @IBAction func whenSegmentChanged(_ sender: UISegmentedControl) {
+        currentColor = colors[sender.selectedSegmentIndex]
+    }
+    
     @IBAction func whenButtonPressed(_ sender: UIButton) {
         let titleOfButtonPressed = sender.titleLabel?.text
         
@@ -38,12 +48,33 @@ class ViewController: UIViewController {
         } else if titleOfButtonPressed == "Triangle"{
             
         } else if titleOfButtonPressed == "Quadrilateral" {
+            var quadpoints = [CGPoint]()
+            for index in 1...4{
+                let xpoint = xValuesTextfields[index].text
+                let ypoint = yValuesTextfields[index].text
+                quadpoints.append(CGPoint(x: (xpoint as! NSString).doubleValue, y: (ypoint as! NSString).doubleValue))
+            }
         
         } else if titleOfButtonPressed == "Pentagon" {
             
         } else if titleOfButtonPressed == "Hexagon" {
             
         } else if titleOfButtonPressed == "Heptagon" {
+            var heptagonIndex = 0
+            for xVertices in xValuesTextfields {
+                let xVerticeText = xVertices.text
+                let xVerticeInt = Int(xVerticeText!)
+                heptagonIndex += 1
+                print(xVerticeInt!)
+            }
+            heptagonIndex = 0
+            for yVertices in yValuesTextfields {
+                let yVerticeText = yVertices.text
+                let yVerticeInt = Int(yVerticeText!)
+                heptagonIndex += 1
+                print(yVerticeInt!)
+            }
+
             
         } else if titleOfButtonPressed == "Octagon" {
             
@@ -92,4 +123,3 @@ class ViewController: UIViewController {
     }
     
 }
-
