@@ -50,7 +50,7 @@ class SecondViewController: UIViewController {
             
         }
         if titleOfButtonPressed == "Decagon" {
-            
+           drawView.vertices = []
         }
         view = drawView
         
