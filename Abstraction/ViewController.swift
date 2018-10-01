@@ -79,55 +79,31 @@ class ViewController: UIViewController {
         } else if titleOfButtonPressed == "Octagon" {
             
         } else if titleOfButtonPressed == "Nonagon" {
-            for xCoordinates in xValuesTextfields {
-                let xCoordinateText = xCoordinates.text
-                let xCoordinateInteger = Int(xCoordinateText!)
-                nonagon.nv1.0 = xCoordinateInteger!
-                
+            var arrayOfXValues: [Int] = []
+            var arrayOfYValues: [Int] = []
+            for xValues in xValuesTextfields {
+                let intXValues = Int(xValues.text!)
+                arrayOfXValues.append(intXValues!)
             }
-            for yCoordinates in yValuesTextfields {
-                let yCoordinateText = yCoordinates.text
-                let yCoordinateInteger = Int(yCoordinateText!)
-                nonagon.nv1.1 = yCoordinateInteger!
+            for yValues in yValuesTextfields {
+                let intYValues = Int(yValues.text!)
+                arrayOfYValues.append(intYValues!)
             }
-//            let nonagonShape = Nonagon()
-//            let xOne = xValuesTextfields[0]
-//            let xTwo = xValuesTextfields[1]
-//            let xThree = xValuesTextfields[2]
-//            let xFour = xValuesTextfields[3]
-//            let xFive = xValuesTextfields[4]
-//            let xSix = xValuesTextfields[5]
-//            let xSeven = xValuesTextfields[6]
-//            let xEight = xValuesTextfields[7]
-//            let xNine = xValuesTextfields[8]
-//            let yOne = yValuesTextfields[0]
-//            let yTwo = yValuesTextfields[1]
-//            let yThree = yValuesTextfields[2]
-//            let yFour = yValuesTextfields[3]
-//            let yFive = yValuesTextfields[4]
-//            let ySix = yValuesTextfields[5]
-//            let ySeven = yValuesTextfields[6]
-//            let yEight = yValuesTextfields[7]
-//            let yNine = yValuesTextfields[8]
-//            nonagonShape.nv1.0 == Int(xOne.text!)
-//            nonagonShape.nv1.1 == Int(yOne.text!)
-//            nonagonShape.nv2.0 == Int(xTwo.text!)
-//            nonagonShape.nv2.1 == Int(yTwo.text!)
-//            nonagonShape.nv3.0 == Int(xThree.text!)
-//            nonagonShape.nv3.1 == Int(yThree.text!)
-//            nonagonShape.nv4.0 == Int(xFour.text!)
-//            nonagonShape.nv4.1 == Int(yFour.text!)
-//            nonagonShape.nv5.0 == Int(xFive.text!)
-//            nonagonShape.nv5.1 == Int(yFive.text!)
-//            nonagonShape.nv6.0 == Int(xSix.text!)
-//            nonagonShape.nv6.1 == Int(ySix.text!)
-//            nonagonShape.nv7.0 == Int(xSeven.text!)
-//            nonagonShape.nv7.1 == Int(ySeven.text!)
-//            nonagonShape.nv8.0 == Int(xEight.text!)
-//            nonagonShape.nv8.1 == Int(yEight.text!)
-//            nonagonShape.nv9.0 == Int(xNine.text!)
-//            nonagonShape.nv9.1 == Int(yNine.text!)
+            var pointOne: CGPoint, pointTwo: CGPoint, pointThree: CGPoint, pointFour: CGPoint, pointFive: CGPoint, pointSix: CGPoint, pointSeven: CGPoint, pointEight: CGPoint, pointNine: CGPoint
             
+            nonagon = Nonagon(nv1: CGPoint(x: arrayOfXValues[0], y: arrayOfYValues[0]), nv2: CGPoint(x: arrayOfXValues[1], y: arrayOfYValues[1]), nv3: CGPoint(x: arrayOfXValues[2], y: arrayOfYValues[2]), nv4: CGPoint(x: arrayOfXValues[3], y: arrayOfYValues[3]), nv5: CGPoint(x: arrayOfXValues[4], y: arrayOfYValues[4]), nv6: CGPoint(x: arrayOfXValues[5], y: arrayOfYValues[5]), nv7: CGPoint(x: arrayOfXValues[6], y: arrayOfYValues[6]), nv8: CGPoint(x: arrayOfXValues[7], y: arrayOfYValues[7]), nv9: CGPoint(x: arrayOfXValues[8], y: arrayOfYValues[8]))
+            
+            nonagon.nv1 = CGPoint(x: arrayOfXValues[0], y: arrayOfYValues[0])
+            nonagon.nv2 = CGPoint(x: arrayOfXValues[1], y: arrayOfYValues[1])
+            nonagon.nv3 = CGPoint(x: arrayOfXValues[2], y: arrayOfYValues[2])
+            nonagon.nv4 = CGPoint(x: arrayOfXValues[3], y: arrayOfYValues[3])
+            nonagon.nv5 = CGPoint(x: arrayOfXValues[4], y: arrayOfYValues[4])
+            nonagon.nv6 = CGPoint(x: arrayOfXValues[5], y: arrayOfYValues[5])
+            nonagon.nv7 = CGPoint(x: arrayOfXValues[6], y: arrayOfYValues[6])
+            nonagon.nv8 = CGPoint(x: arrayOfXValues[7], y: arrayOfYValues[7])
+            nonagon.nv9 = CGPoint(x: arrayOfXValues[8], y: arrayOfYValues[8])
+            
+//            var arrayOfPoints = [pointOne, pointTwo, pointThree, pointFour, pointFive, pointSix, pointSeven, pointEight, pointNine]
         } else {
             
         }

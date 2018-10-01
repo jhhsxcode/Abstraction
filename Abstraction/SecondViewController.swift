@@ -47,7 +47,8 @@ class SecondViewController: UIViewController {
             
         }
         if titleOfButtonPressed == "Nonagon" {
-            drawView.vertices = [CGPoint(x: (nonagon?.nv1.0)!, y: (nonagon?.nv1.1)!)]
+            drawView.vertices = [nonagon!.nv1, nonagon!.nv2, nonagon!.nv3, nonagon!.nv4, nonagon!.nv5, nonagon!.nv6, nonagon!.nv7, nonagon!.nv8, nonagon!.nv9]
+           
         }
         if titleOfButtonPressed == "Decagon" {
             
