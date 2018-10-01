@@ -38,6 +38,14 @@ class SecondViewController: UIViewController {
         }
         if titleOfButtonPressed == "Pentagon" {
             
+            
+            
+            
+            
+            
+            
+            
+            
         }
         if titleOfButtonPressed == "Hexagon" {
             
@@ -49,10 +57,10 @@ class SecondViewController: UIViewController {
             
         }
         if titleOfButtonPressed == "Nonagon" {
-            
+            drawView.vertices = [CGPoint(x: (nonagon?.nv1.0)!, y: (nonagon?.nv1.1)!)]
         }
         if titleOfButtonPressed == "Decagon" {
-            
+           drawView.vertices = []
         }
         view = drawView
         

@@ -9,5 +9,13 @@
 import UIKit
 
 class Heptagon {
+    var HeptaV1 = (0,0)
+    var HeptaV2 = (0,0)
+    var HeptaV3 = (0,0)
+    var HeptaV4 = (0,0)
+    var HeptaV5 = (0,0)
+    var HeptaV6 = (0,0)
+    var HeptaV7 = (0,0)
+    
     
 }
