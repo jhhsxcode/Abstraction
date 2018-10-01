@@ -32,8 +32,8 @@ class SecondViewController: UIViewController {
             
         }
         if titleOfButtonPressed == "Quadrilateral" {
-            var quad: Quadrilateral!
-            drawView.vertices = [quad.vert1, quad.vert2, quad.vert3, quad.vert4]
+            
+            drawView.vertices = [quadrilateral?.vert1, quadrilateral?.vert2, quadrilateral?.vert3, quadrilateral?.vert4] as! [CGPoint]
             
         }
         if titleOfButtonPressed == "Pentagon" {

@@ -9,7 +9,7 @@
 import Foundation
 
 
-//class Pentagon: ViewController {
+class Pentagon: ViewController {
 //    override func viewDidLoad() {
 //        {
 

@@ -48,12 +48,13 @@ class ViewController: UIViewController {
         } else if titleOfButtonPressed == "Triangle"{
             
         } else if titleOfButtonPressed == "Quadrilateral" {
-            var quad: Quadrilateral!
             
-            quad.vert1 = CGPoint(x: ((xValuesTextfields[0].text)! as NSString).doubleValue, y: ((yValuesTextfields[0].text)! as NSString).doubleValue)
-            quad.vert2 = CGPoint(x: ((xValuesTextfields[1].text)! as NSString).doubleValue, y: ((yValuesTextfields[1].text)! as NSString).doubleValue)
-            quad.vert3 = CGPoint(x: ((xValuesTextfields[2].text)! as NSString).doubleValue, y: ((yValuesTextfields[2].text)! as NSString).doubleValue)
-            quad.vert4 = CGPoint(x: ((xValuesTextfields[3].text)! as NSString).doubleValue, y: ((yValuesTextfields[4].text)! as NSString).doubleValue)
+           var vert1 = CGPoint(x: ((xValuesTextfields[0].text) as! NSString).doubleValue, y: ((yValuesTextfields[0].text) as! NSString).doubleValue)
+            var vert2 = CGPoint(x: ((xValuesTextfields[1].text) as! NSString).doubleValue, y: ((yValuesTextfields[1].text) as! NSString).doubleValue)
+            var vert3 = CGPoint(x: ((xValuesTextfields[2].text) as! NSString).doubleValue, y: ((yValuesTextfields[2].text) as! NSString).doubleValue)
+            var vert4 = CGPoint(x: ((xValuesTextfields[3].text) as! NSString).doubleValue, y: ((yValuesTextfields[4].text) as! NSString).doubleValue)
+            
+            quadrilateral = Quadrilateral.init(vert1: vert1, vert2: vert2, vert3: vert3, vert4: vert4)
             
         } else if titleOfButtonPressed == "Pentagon" {
             
