@@ -9,21 +9,21 @@
 import Foundation
 
 
-class Pentagon: ViewController {
-    override func viewDidLoad() {
-        {
-            
-        }
-    }
-    let pentagonPoints = whenButtonpressed()
-    pentagonPoints.move(to: CGPoint(x: 100, y: 200))
-    
-    
-    var pentagonPointTwo.addLine(to: CGPoint(x: 200, y: 100))
-    var pentagonPointThree.addLine(to: CGPoint(x: 200, y: 200))
-    var pentagonPointFour.addLine(to: CGPoint(x: 100, y: 200))
-    var pentagonPointFive.addLine(to: CGPoint(x: 200, y: 100))
-    
+//class Pentagon: ViewController {
+//    override func viewDidLoad() {
+//        {
+//
+//        }
+//    }
+//    let pentagonPoints = whenButtonpressed()
+//    pentagonPoints.move(to: CGPoint(x: 100, y: 200))
+//
+//
+//    var pentagonPointTwo.addLine(to: CGPoint(x: 200, y: 100))
+//    var pentagonPointThree.addLine(to: CGPoint(x: 200, y: 200))
+//    var pentagonPointFour.addLine(to: CGPoint(x: 100, y: 200))
+//    var pentagonPointFive.addLine(to: CGPoint(x: 200, y: 100))
+//
     
     
     
