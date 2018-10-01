@@ -48,33 +48,40 @@ class ViewController: UIViewController {
         } else if titleOfButtonPressed == "Triangle"{
             
         } else if titleOfButtonPressed == "Quadrilateral" {
-            var quadpoints = [CGPoint]()
-            for index in 1...4{
-                let xpoint = xValuesTextfields[index].text
-                let ypoint = yValuesTextfields[index].text
-                quadpoints.append(CGPoint(x: (xpoint as! NSString).doubleValue, y: (ypoint as! NSString).doubleValue))
-            }
-        
+            
+           var vert1 = CGPoint(x: ((xValuesTextfields[0].text) as! NSString).doubleValue, y: ((yValuesTextfields[0].text) as! NSString).doubleValue)
+            var vert2 = CGPoint(x: ((xValuesTextfields[1].text) as! NSString).doubleValue, y: ((yValuesTextfields[1].text) as! NSString).doubleValue)
+            var vert3 = CGPoint(x: ((xValuesTextfields[2].text) as! NSString).doubleValue, y: ((yValuesTextfields[2].text) as! NSString).doubleValue)
+            var vert4 = CGPoint(x: ((xValuesTextfields[3].text) as! NSString).doubleValue, y: ((yValuesTextfields[4].text) as! NSString).doubleValue)
+            
+            quadrilateral = Quadrilateral.init(vert1: vert1, vert2: vert2, vert3: vert3, vert4: vert4)
+            
         } else if titleOfButtonPressed == "Pentagon" {
+            
+            
+            
+            
             
         } else if titleOfButtonPressed == "Hexagon" {
             
         } else if titleOfButtonPressed == "Heptagon" {
-            var heptagonIndex = 0
+            var heptaXPoints = [Int]()
+            var heptaYPoints = [Int]()
             for xVertices in xValuesTextfields {
                 let xVerticeText = xVertices.text
                 let xVerticeInt = Int(xVerticeText!)
-                heptagonIndex += 1
                 print(xVerticeInt!)
+                heptaXPoints.append(xVerticeInt!)
             }
-            heptagonIndex = 0
             for yVertices in yValuesTextfields {
                 let yVerticeText = yVertices.text
                 let yVerticeInt = Int(yVerticeText!)
-                heptagonIndex += 1
                 print(yVerticeInt!)
+                heptaYPoints.append(yVerticeInt!)
             }
-
+            
+            
+        
             
         } else if titleOfButtonPressed == "Octagon" {
             
