@@ -24,8 +24,9 @@ class ViewController: UIViewController {
     var octagon: Octagon!
     var nonagon: Nonagon!
     var decagon: Decagon!
-    var Hendecagon: Hendecagon!
-    var Dodecagon: Dodecagon!
+    var hendecagon: Hendecagon!
+    var dodecagon: Dodecagon!
+    var tridecagon: Tridecagon!
     var currentColor: UIColor = UIColor()
     let colors: [UIColor] = [.blue,.green,.white,.yellow,.cyan,.purple]
     
@@ -111,11 +112,15 @@ class ViewController: UIViewController {
             //Create your abstraction
             //Place vertices into your abstraction
                 
-        } else {
+        } else if titleOfButtonPressed == "Tridecagon" {
             
             //Create your abstraction
             //Place vertices into your abstraction
             
+        } else {
+            
+            //Create your abstraction
+            //Place vertices into your abstraction
         }
         
         performSegue(withIdentifier: "drawIt", sender: sender)
@@ -152,6 +157,16 @@ class ViewController: UIViewController {
         if titleOfButtonPressed == "Decagon" {
             nvc.decagon = decagon
         }
+        if titleOfButtonPressed == "Hendecagon" {
+            nvc.hendecagon = hendecagon
+        }
+        if titleOfButtonPressed == "Dodecagon" {
+            nvc.dodecagon = dodecagon
+        }
+        if titleOfButtonPressed == "Tridecagon" {
+            nvc.tridecagon = tridecagon
+        }
+        
         
         nvc.titleOfButtonPressed = titleOfButtonPressed!
     }

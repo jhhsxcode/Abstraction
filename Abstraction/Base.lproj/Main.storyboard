@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="wk4-SX-ATq">
-                                <rect key="frame" x="236.5" y="50" width="295" height="1007"/>
+                                <rect key="frame" x="236.5" y="50" width="295" height="1043"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter as many vertices as you need to create your figure. Suggestion: Y values should be larger than 100" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DgF-AL-3V0">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="75"/>
@@ -627,6 +627,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVI-17-hXR">
                                         <rect key="frame" x="0.0" y="977" width="295" height="30"/>
                                         <state key="normal" title="Dodecagon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7x-XW-hz8">
+                                        <rect key="frame" x="0.0" y="1013" width="295" height="30"/>
+                                        <state key="normal" title="Tridecagon"/>
                                     </button>
                                 </subviews>
                             </stackView>

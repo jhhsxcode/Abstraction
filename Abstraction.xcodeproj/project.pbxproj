@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4760FF3B2332B56D00A60AD9 /* Tridecagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4760FF3A2332B56D00A60AD9 /* Tridecagon.swift */; };
 		47801512215BAD77008CCCD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801511215BAD77008CCCD1 /* AppDelegate.swift */; };
 		47801514215BAD77008CCCD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801513215BAD77008CCCD1 /* ViewController.swift */; };
 		47801517215BAD77008CCCD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47801515215BAD77008CCCD1 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4760FF3A2332B56D00A60AD9 /* Tridecagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tridecagon.swift; sourceTree = "<group>"; };
 		4780150E215BAD77008CCCD1 /* Abstraction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abstraction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47801511215BAD77008CCCD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47801513215BAD77008CCCD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				E74E725D215C745B00A3EE63 /* Decagon.swift */,
 				47BF87B82332778300DAD491 /* Hendecagon.swift */,
 				47BF87BA2332786E00DAD491 /* Dodecagon.swift */,
+				4760FF3A2332B56D00A60AD9 /* Tridecagon.swift */,
 				47801513215BAD77008CCCD1 /* ViewController.swift */,
 				4780152B215BF4BC008CCCD1 /* SecondViewController.swift */,
 				47801527215BB124008CCCD1 /* DrawView.swift */,
@@ -185,6 +188,7 @@
 				E74E7267215C745C00A3EE63 /* Quadrilateral.swift in Sources */,
 				47BF87B92332778300DAD491 /* Hendecagon.swift in Sources */,
 				E74E7263215C745C00A3EE63 /* Decagon.swift in Sources */,
+				4760FF3B2332B56D00A60AD9 /* Tridecagon.swift in Sources */,
 				E74E7264215C745C00A3EE63 /* Triangle.swift in Sources */,
 				47801528215BB124008CCCD1 /* DrawView.swift in Sources */,
 				A369088E215C0E0F0067E214 /* Line.swift in Sources */,

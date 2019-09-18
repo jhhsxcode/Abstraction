@@ -19,6 +19,9 @@ class SecondViewController: UIViewController {
     var octagon: Octagon?
     var nonagon: Nonagon?
     var decagon: Decagon?
+    var hendecagon: Hendecagon?
+    var dodecagon: Dodecagon?
+    var tridecagon: Tridecagon?
     
     var titleOfButtonPressed: String = ""
     
@@ -80,17 +83,23 @@ class SecondViewController: UIViewController {
             
         }
         if titleOfButtonPressed == "Henecagon" {
-
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
         }
-        //Take vertices out of your Abstraction
-        //Place vertices into drawView vertices
-        
         if titleOfButtonPressed == "Dodecagon" {
             
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
             
         }
+        
+        if titleOfButtonPressed == "Tridecagon" {
+            
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
+            
+        }
+
         view = drawView
     }
 
