@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     var octagon: Octagon!
     var nonagon: Nonagon!
     var decagon: Decagon!
+    var Hendecagon: Hendecagon!
+    var Dodecagon: Dodecagon!
     var currentColor: UIColor = UIColor()
     let colors: [UIColor] = [.blue,.green,.white,.yellow,.cyan,.purple]
     
@@ -40,78 +42,79 @@ class ViewController: UIViewController {
         currentColor = colors[sender.selectedSegmentIndex]
     }
     
+    
+    
     @IBAction func whenButtonPressed(_ sender: UIButton) {
         let titleOfButtonPressed = sender.titleLabel?.text
         
+        var enteredVertices:[CGPoint] = []
+        
+        for index in 0..<xValuesTextfields.count {
+            if let xText = xValuesTextfields[index].text, let xValue = Int(xText),
+                let yText = yValuesTextfields[index].text, let yValue = Int(yText)
+            {
+                let currentPoint = CGPoint(x: xValue, y: yValue)
+                enteredVertices.append(currentPoint)
+            } else {
+                break
+            }
+            
+        }
+        
         if titleOfButtonPressed == "Line" {
+
+            //Create your abstraction
+            //Place vertices into your abstraction
             
         } else if titleOfButtonPressed == "Triangle"{
             
+            //Create your abstraction
+            //Place vertices into your abstraction
+            
         } else if titleOfButtonPressed == "Quadrilateral" {
             
-           var vert1 = CGPoint(x: ((xValuesTextfields[0].text) as! NSString).doubleValue, y: ((yValuesTextfields[0].text) as! NSString).doubleValue)
-            var vert2 = CGPoint(x: ((xValuesTextfields[1].text) as! NSString).doubleValue, y: ((yValuesTextfields[1].text) as! NSString).doubleValue)
-            var vert3 = CGPoint(x: ((xValuesTextfields[2].text) as! NSString).doubleValue, y: ((yValuesTextfields[2].text) as! NSString).doubleValue)
-            var vert4 = CGPoint(x: ((xValuesTextfields[3].text) as! NSString).doubleValue, y: ((yValuesTextfields[4].text) as! NSString).doubleValue)
-            
-            quadrilateral = Quadrilateral.init(vert1: vert1, vert2: vert2, vert3: vert3, vert4: vert4)
+            //Create your abstraction
+            //Place vertices into your abstraction
             
         } else if titleOfButtonPressed == "Pentagon" {
             
-            
-            
-            
+            //Create your abstraction
+            //Place vertices into your abstraction
             
         } else if titleOfButtonPressed == "Hexagon" {
             
+            //Create your abstraction
+            //Place vertices into your abstraction
+            
         } else if titleOfButtonPressed == "Heptagon" {
-            var heptaXPoints = [Int]()
-            var heptaYPoints = [Int]()
-            for xVertices in xValuesTextfields {
-                let xVerticeText = xVertices.text
-                let xVerticeInt = Int(xVerticeText!)
-                print(xVerticeInt!)
-                heptaXPoints.append(xVerticeInt!)
-            }
-            for yVertices in yValuesTextfields {
-                let yVerticeText = yVertices.text
-                let yVerticeInt = Int(yVerticeText!)
-                print(yVerticeInt!)
-                heptaYPoints.append(yVerticeInt!)
-            }
             
-            
-        
+            //Create your abstraction
+            //Place vertices into your abstraction
             
         } else if titleOfButtonPressed == "Octagon" {
+           
+            //Create your abstraction
+            //Place vertices into your abstraction
             
         } else if titleOfButtonPressed == "Nonagon" {
-            var arrayOfXValues: [Int] = []
-            var arrayOfYValues: [Int] = []
-            for xValues in xValuesTextfields {
-                let intXValues = Int(xValues.text!)
-                arrayOfXValues.append(intXValues!)
-            }
-            for yValues in yValuesTextfields {
-                let intYValues = Int(yValues.text!)
-                arrayOfYValues.append(intYValues!)
-            }
-            var pointOne: CGPoint, pointTwo: CGPoint, pointThree: CGPoint, pointFour: CGPoint, pointFive: CGPoint, pointSix: CGPoint, pointSeven: CGPoint, pointEight: CGPoint, pointNine: CGPoint
             
-            nonagon = Nonagon(nv1: CGPoint(x: arrayOfXValues[0], y: arrayOfYValues[0]), nv2: CGPoint(x: arrayOfXValues[1], y: arrayOfYValues[1]), nv3: CGPoint(x: arrayOfXValues[2], y: arrayOfYValues[2]), nv4: CGPoint(x: arrayOfXValues[3], y: arrayOfYValues[3]), nv5: CGPoint(x: arrayOfXValues[4], y: arrayOfYValues[4]), nv6: CGPoint(x: arrayOfXValues[5], y: arrayOfYValues[5]), nv7: CGPoint(x: arrayOfXValues[6], y: arrayOfYValues[6]), nv8: CGPoint(x: arrayOfXValues[7], y: arrayOfYValues[7]), nv9: CGPoint(x: arrayOfXValues[8], y: arrayOfYValues[8]))
+            //Create your abstraction
+            //Place vertices into your abstraction
             
-            nonagon.nv1 = CGPoint(x: arrayOfXValues[0], y: arrayOfYValues[0])
-            nonagon.nv2 = CGPoint(x: arrayOfXValues[1], y: arrayOfYValues[1])
-            nonagon.nv3 = CGPoint(x: arrayOfXValues[2], y: arrayOfYValues[2])
-            nonagon.nv4 = CGPoint(x: arrayOfXValues[3], y: arrayOfYValues[3])
-            nonagon.nv5 = CGPoint(x: arrayOfXValues[4], y: arrayOfYValues[4])
-            nonagon.nv6 = CGPoint(x: arrayOfXValues[5], y: arrayOfYValues[5])
-            nonagon.nv7 = CGPoint(x: arrayOfXValues[6], y: arrayOfYValues[6])
-            nonagon.nv8 = CGPoint(x: arrayOfXValues[7], y: arrayOfYValues[7])
-            nonagon.nv9 = CGPoint(x: arrayOfXValues[8], y: arrayOfYValues[8])
+        } else if titleOfButtonPressed == "Decagon" {
             
-//            var arrayOfPoints = [pointOne, pointTwo, pointThree, pointFour, pointFive, pointSix, pointSeven, pointEight, pointNine]
+            //Create your abstraction
+            //Place vertices into your abstraction
+            
+        } else if titleOfButtonPressed == "Hendecagon" {
+                
+            //Create your abstraction
+            //Place vertices into your abstraction
+                
         } else {
+            
+            //Create your abstraction
+            //Place vertices into your abstraction
             
         }
         

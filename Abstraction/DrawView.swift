@@ -14,6 +14,7 @@ class DrawView: UIView {
     public var lineColor: UIColor = UIColor.red
     
     public override func draw(_ rect: CGRect) {
+        
         let context = UIGraphicsGetCurrentContext()!
         context.setLineWidth(2.0)
         context.setStrokeColor(lineColor.cgColor)

@@ -27,47 +27,71 @@ class SecondViewController: UIViewController {
         let drawView = DrawView()
         if titleOfButtonPressed == "Line" {
             
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
+            
         }
         if titleOfButtonPressed == "Triangle"{
+            
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
             
         }
         if titleOfButtonPressed == "Quadrilateral" {
             
-            drawView.vertices = [quadrilateral?.vert1, quadrilateral?.vert2, quadrilateral?.vert3, quadrilateral?.vert4] as! [CGPoint]
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
             
         }
         if titleOfButtonPressed == "Pentagon" {
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+             //Take vertices out of your Abstraction
+             //Place vertices into drawView vertices
+             
         }
         if titleOfButtonPressed == "Hexagon" {
+            
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
             
         }
         if titleOfButtonPressed == "Heptagon" {
             
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
+            
         }
         if titleOfButtonPressed == "Octagon" {
             
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
+            
         }
         if titleOfButtonPressed == "Nonagon" {
-            drawView.vertices = [nonagon!.nv1, nonagon!.nv2, nonagon!.nv3, nonagon!.nv4, nonagon!.nv5, nonagon!.nv6, nonagon!.nv7, nonagon!.nv8, nonagon!.nv9]
+
+           //Take vertices out of your Abstraction
+           //Place vertices into drawView vertices
            
         }
         if titleOfButtonPressed == "Decagon" {
-           drawView.vertices = []
+            
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
+            
+        }
+        if titleOfButtonPressed == "Henecagon" {
+
+        }
+        //Take vertices out of your Abstraction
+        //Place vertices into drawView vertices
+        
+        if titleOfButtonPressed == "Dodecagon" {
+            
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
+            
         }
         view = drawView
-        
     }
-    
-
-    
 
 }

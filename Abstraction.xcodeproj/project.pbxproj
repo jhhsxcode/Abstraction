@@ -14,6 +14,8 @@
 		4780151C215BAD7B008CCCD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4780151A215BAD7B008CCCD1 /* LaunchScreen.storyboard */; };
 		47801528215BB124008CCCD1 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801527215BB124008CCCD1 /* DrawView.swift */; };
 		4780152C215BF4BC008CCCD1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780152B215BF4BC008CCCD1 /* SecondViewController.swift */; };
+		47BF87B92332778300DAD491 /* Hendecagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BF87B82332778300DAD491 /* Hendecagon.swift */; };
+		47BF87BB2332786E00DAD491 /* Dodecagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BF87BA2332786E00DAD491 /* Dodecagon.swift */; };
 		781BB863215C0DFC000E25BE /* Heptagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781BB862215C0DFC000E25BE /* Heptagon.swift */; };
 		A369088E215C0E0F0067E214 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A369088D215C0E0F0067E214 /* Line.swift */; };
 		DEEE2B27215C1177007E5FEB /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE2B26215C1177007E5FEB /* Hexagon.swift */; };
@@ -35,6 +37,8 @@
 		4780151D215BAD7B008CCCD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47801527215BB124008CCCD1 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		4780152B215BF4BC008CCCD1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		47BF87B82332778300DAD491 /* Hendecagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hendecagon.swift; sourceTree = "<group>"; };
+		47BF87BA2332786E00DAD491 /* Dodecagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dodecagon.swift; sourceTree = "<group>"; };
 		781BB862215C0DFC000E25BE /* Heptagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heptagon.swift; sourceTree = "<group>"; };
 		A369088D215C0E0F0067E214 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		DEEE2B26215C1177007E5FEB /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				E74E7262215C745C00A3EE63 /* Octagon.swift */,
 				E74E725F215C745B00A3EE63 /* Nonagon.swift */,
 				E74E725D215C745B00A3EE63 /* Decagon.swift */,
+				47BF87B82332778300DAD491 /* Hendecagon.swift */,
+				47BF87BA2332786E00DAD491 /* Dodecagon.swift */,
 				47801513215BAD77008CCCD1 /* ViewController.swift */,
 				4780152B215BF4BC008CCCD1 /* SecondViewController.swift */,
 				47801527215BB124008CCCD1 /* DrawView.swift */,
@@ -177,10 +183,12 @@
 				4780152C215BF4BC008CCCD1 /* SecondViewController.swift in Sources */,
 				781BB863215C0DFC000E25BE /* Heptagon.swift in Sources */,
 				E74E7267215C745C00A3EE63 /* Quadrilateral.swift in Sources */,
+				47BF87B92332778300DAD491 /* Hendecagon.swift in Sources */,
 				E74E7263215C745C00A3EE63 /* Decagon.swift in Sources */,
 				E74E7264215C745C00A3EE63 /* Triangle.swift in Sources */,
 				47801528215BB124008CCCD1 /* DrawView.swift in Sources */,
 				A369088E215C0E0F0067E214 /* Line.swift in Sources */,
+				47BF87BB2332786E00DAD491 /* Dodecagon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
