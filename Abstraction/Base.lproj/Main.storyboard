@@ -732,6 +732,12 @@
                         <outletCollection property="yValuesTextfields" destination="kwI-np-Gqx" collectionClass="NSMutableArray" id="kLb-fE-c5P"/>
                         <outletCollection property="yValuesTextfields" destination="Rnk-4y-zGi" collectionClass="NSMutableArray" id="ui2-BV-IoA"/>
                         <outletCollection property="yValuesTextfields" destination="Ha3-Ew-wID" collectionClass="NSMutableArray" id="j5R-hs-KYD"/>
+                        <outletCollection property="xValuesTextfields" destination="XOM-bx-lfj" collectionClass="NSMutableArray" id="8ME-A8-QFa"/>
+                        <outletCollection property="xValuesTextfields" destination="ogz-89-CAs" collectionClass="NSMutableArray" id="d8E-oK-R2O"/>
+                        <outletCollection property="xValuesTextfields" destination="jGc-cz-KpO" collectionClass="NSMutableArray" id="B3E-2B-z9O"/>
+                        <outletCollection property="yValuesTextfields" destination="2e9-hL-D5Y" collectionClass="NSMutableArray" id="uF7-g3-g20"/>
+                        <outletCollection property="yValuesTextfields" destination="Qud-Eg-CVS" collectionClass="NSMutableArray" id="BGP-Mq-wBJ"/>
+                        <outletCollection property="yValuesTextfields" destination="dQq-d1-dep" collectionClass="NSMutableArray" id="o1j-wR-Hut"/>
                         <segue destination="fai-il-HHT" kind="show" identifier="drawIt" id="haH-iV-bq8"/>
                     </connections>
                 </viewController>
