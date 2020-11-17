@@ -72,18 +72,42 @@ class ViewController: UIViewController {
         
         if titleOfButtonPressed == "Line" {
             
-            line = Line(vertices: enteredVertices)
+            //MVP
+            //Create your abstraction
+            //Place vertices into your abstraction
             
+            //Stretch #1
+            //Take the color out of the segmented controller
+            //Place the color into your abstraction
+            
+            //Stretch #2
+            //Store the name of your shape in the abstraction
+        
         } else if titleOfButtonPressed == "Triangle"{
             
-            triangle = Triangle()
-            triangle.vertice1 = enteredVertices[0]
-            triangle.vertice2 = enteredVertices[1]
-            triangle.vertice3 = enteredVertices[2]
+            //MVP
+            //Create your abstraction
+            //Place vertices into your abstraction
+            
+            //Stretch #1
+            //Take the color out of the segmented controller
+            //Place the color into your abstraction
+            
+            //Stretch #2
+            //Store the name of your shape in the abstraction
             
         } else if titleOfButtonPressed == "Quadrilateral" {
             
-            quadrilateral = Quadrilateral(vertices: enteredVertices)
+            //MVP
+            //Create your abstraction
+            //Place vertices into your abstraction
+            
+            //Stretch #1
+            //Take the color out of the segmented controller
+            //Place the color into your abstraction
+            
+            //Stretch #2
+            //Store the name of your shape in the abstraction
             
         } else if titleOfButtonPressed == "Pentagon" {
             //MVP

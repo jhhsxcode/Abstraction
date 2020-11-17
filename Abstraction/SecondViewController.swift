@@ -33,23 +33,48 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         let drawView = DrawView()
         if titleOfButtonPressed == "Line" {
+            //MVP
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
             
-            if let line = line {
-                drawView.vertices = line.getVertices()
-            }
+            //Stretch #1
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
+            
+            //Stretch #2
+            //Take the name of the shape out of your Abstraction
+            //Place the name into the navigation title bar
+            
             
         }
         if titleOfButtonPressed == "Triangle" {
             
-            guard let triangle = triangle else {return}
-            drawView.vertices = [triangle.vertice1,triangle.vertice2,triangle.vertice3]
+           //MVP
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
+            
+            //Stretch #1
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
+            
+            //Stretch #2
+            //Take the name of the shape out of your Abstraction
+            //Place the name into the navigation title bar
             
         }
         if titleOfButtonPressed == "Quadrilateral" {
+            //MVP
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
             
-            if let quadrilateral = quadrilateral {
-                drawView.vertices = quadrilateral.vertices
-            }
+            //Stretch #1
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
+            
+            //Stretch #2
+            //Take the name of the shape out of your Abstraction
+            //Place the name into the navigation title bar
+           
         }
         if titleOfButtonPressed == "Pentagon" {
             //MVP
