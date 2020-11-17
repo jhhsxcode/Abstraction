@@ -7,7 +7,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     @IBOutlet var xValuesTextfields: [UITextField]!
     @IBOutlet var yValuesTextfields: [UITextField]!
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
             counter += 1
         }
     }
-
+    
     @IBAction func whenSegmentChanged(_ sender: UISegmentedControl) {
         currentColor = colors[sender.selectedSegmentIndex]
     }
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         if titleOfButtonPressed == "Line" {
             
             line = Line(vertices: enteredVertices)
-        
+            
         } else if titleOfButtonPressed == "Triangle"{
             
             triangle = Triangle()
@@ -119,16 +119,16 @@ class ViewController: UIViewController {
             //Stretch #2
             //Store the name of your shape in the abstraction
         } else if titleOfButtonPressed == "Octagon" {
-           //MVP
-           //Create your abstraction
-           //Place vertices into your abstraction
-           
-           //Stretch #1
-           //Take the color out of the segmented controller
-           //Place the color into your abstraction
-           
-           //Stretch #2
-           //Store the name of your shape in the abstraction
+            //MVP
+            //Create your abstraction
+            //Place vertices into your abstraction
+            
+            //Stretch #1
+            //Take the color out of the segmented controller
+            //Place the color into your abstraction
+            
+            //Stretch #2
+            //Store the name of your shape in the abstraction
         } else if titleOfButtonPressed == "Nonagon" {
             //MVP
             //Create your abstraction
@@ -152,21 +152,22 @@ class ViewController: UIViewController {
             //Stretch #2
             //Store the name of your shape in the abstraction
         } else if titleOfButtonPressed == "Hendecagon" {
-           //MVP
+            //MVP
             //Create your abstraction
             //Place vertices into your abstraction
-                
+            
             //Stretch #1
             //Take the color out of the segmented controller
             //Place the color into your abstraction
-                
+            
             //Stretch #2
             //Store the name of your shape in the abstraction
         } else if titleOfButtonPressed == "Tridecagon" {
             //MVP
             //Create your abstraction
             //Place vertices into your abstraction
-            
+            tridecagon = Tridecagon(verts:enteredVertices,col:currentColor)
+            //            print(tridecagon.vertex1.x,tridecagon.vertex1.y)
             //Stretch #1
             //Take the color out of the segmented controller
             //Place the color into your abstraction
