@@ -7,9 +7,11 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    //MARK: - References Declared
     /*************************************************
      Below are the references to your abstraction. You should notice that
-     the objects have not been created, just the reference. This time they
+     the objects have NOT been created, just the reference. This time they
      are optionals. That means that you will need to make sure that the
      data is there before placing it into the drawView.
      *************************************************/
@@ -32,142 +34,174 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let drawView = DrawView()
+        
+        //MARK: - Line
         if titleOfButtonPressed == "Line" {
-            
-            if let line = line {
-                drawView.vertices = line.getVertices()
-            }
-            
-        }
-        if titleOfButtonPressed == "Triangle" {
-            
-            guard let triangle = triangle else {return}
-            drawView.vertices = [triangle.vertice1,triangle.vertice2,triangle.vertice3]
-            
-        }
-        if titleOfButtonPressed == "Quadrilateral" {
-            
-            if let quadrilateral = quadrilateral {
-                drawView.vertices = quadrilateral.vertices
-            }
-        }
-        if titleOfButtonPressed == "Pentagon" {
             //MVP
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
             
             //Stretch #1
-            //Take the color out of your Abstraction
-            //Place the color into drawView color
-            
-            //Stretch #2
             //Take the name of the shape out of your Abstraction
             //Place the name into the navigation title bar
+            
+            //Stretch #2
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
         }
+        //MARK: - Triangle
+        else if titleOfButtonPressed == "Triangle" {
+            //MVP
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
+            
+            //Stretch #1
+            //Take the name of the shape out of your Abstraction
+            //Place the name into the navigation title bar
+            
+            //Stretch #2
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
+        }
+        //MARK: - Quadrilateral
+        else if titleOfButtonPressed == "Quadrilateral" {
+            //MVP
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
+            
+            //Stretch #1
+            //Take the name of the shape out of your Abstraction
+            //Place the name into the navigation title bar
+            
+            //Stretch #2
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
+        }
+        //MARK: - Pentagon
+        else if titleOfButtonPressed == "Pentagon" {
+            //MVP
+            //Take vertices out of your Abstraction
+            //Place vertices into drawView vertices
+            
+            //Stretch #1
+            //Take the name of the shape out of your Abstraction
+            //Place the name into the navigation title bar
+            
+            //Stretch #2
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
+        }
+        //MARK: - Hexagon
         if titleOfButtonPressed == "Hexagon" {
             //MVP
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
             
             //Stretch #1
-            //Take the color out of your Abstraction
-            //Place the color into drawView color
-            
-            //Stretch #2
             //Take the name of the shape out of your Abstraction
             //Place the name into the navigation title bar
+            
+            //Stretch #2
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
         }
+        //MARK: - Heptagon
         if titleOfButtonPressed == "Heptagon" {
             //MVP
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
             
             //Stretch #1
-            //Take the color out of your Abstraction
-            //Place the color into drawView color
-            
-            //Stretch #2
             //Take the name of the shape out of your Abstraction
             //Place the name into the navigation title bar
+            
+            //Stretch #2
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
         }
+        //MARK: - Octagon
         if titleOfButtonPressed == "Octagon" {
             //MVP
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
             
             //Stretch #1
-            //Take the color out of your Abstraction
-            //Place the color into drawView color
-            
-            //Stretch #2
             //Take the name of the shape out of your Abstraction
             //Place the name into the navigation title bar
+            
+            //Stretch #2
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
         }
+        //MARK: - Nonagon
         if titleOfButtonPressed == "Nonagon" {
             //MVP
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
             
             //Stretch #1
-            //Take the color out of your Abstraction
-            //Place the color into drawView color
-            
-            //Stretch #2
             //Take the name of the shape out of your Abstraction
             //Place the name into the navigation title bar
+            
+            //Stretch #2
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
         }
+        //MARK: - Decagon
         if titleOfButtonPressed == "Decagon" {
             //MVP
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
             
             //Stretch #1
-            //Take the color out of your Abstraction
-            //Place the color into drawView color
-            
-            //Stretch #2
             //Take the name of the shape out of your Abstraction
             //Place the name into the navigation title bar
+            
+            //Stretch #2
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
         }
+        //MARK: - Hendecagon
         if titleOfButtonPressed == "Hendecagon" {
             //MVP
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
             
             //Stretch #1
-            //Take the color out of your Abstraction
-            //Place the color into drawView color
-            
-            //Stretch #2
             //Take the name of the shape out of your Abstraction
             //Place the name into the navigation title bar
+            
+            //Stretch #2
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
         }
+        //MARK: - Dodecagon
         if titleOfButtonPressed == "Dodecagon" {
             //MVP
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
             
             //Stretch #1
-            //Take the color out of your Abstraction
-            //Place the color into drawView color
-            
-            //Stretch #2
             //Take the name of the shape out of your Abstraction
             //Place the name into the navigation title bar
+            
+            //Stretch #2
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
         }
-        
+        //MARK: - Tridecagon
         if titleOfButtonPressed == "Tridecagon" {
             //MVP
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
             
             //Stretch #1
-            //Take the color out of your Abstraction
-            //Place the color into drawView color
-            
-            //Stretch #2
             //Take the name of the shape out of your Abstraction
             //Place the name into the navigation title bar
+            
+            //Stretch #2
+            //Take the color out of your Abstraction
+            //Place the color into drawView color
         }
 
         view = drawView
