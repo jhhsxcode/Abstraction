@@ -2,6 +2,7 @@
 //  Tridecagon.swift
 //  Abstraction
 //
+import UIKit
 
 /***************************************
 Your job below is to create an abstraction with the name
@@ -13,7 +14,12 @@ initializer.
 import UIKit
 
 class Tridecagon {
-    
-    //Your Code Here
-    
+    var verts: [CGPoint]
+    var color:UIColor
+    var name:String = "Tridecagon"
+    init(verts:[CGPoint],col:UIColor) {
+        color = col
+        self.verts = verts
+        name = "Tridecagon"
+    }
 }
