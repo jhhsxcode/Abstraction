@@ -226,17 +226,7 @@ class ViewController: UIViewController {
             }
             //MARK: - Tridecagon
             else if titleOfButtonPressed == "Tridecagon" {
-                //MVP
-                //Create your abstraction
-                //Place vertices into your abstraction
                 tridecagon = Tridecagon(verts: enteredVertices, col: currentColor, name: shapeNameTextField.text!)
-                //Stretch #1
-                //Take the name out of the textField
-                //Store the name of your shape in the abstraction
-                
-                //Stretch #2
-                //Take the color out of the segmented controller
-                //Place the color into your abstraction
             } else {
                 //MVP
                 //Create your abstraction

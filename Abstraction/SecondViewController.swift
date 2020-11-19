@@ -191,17 +191,8 @@ class SecondViewController: UIViewController {
         }
         //MARK: - Tridecagon
         if titleOfButtonPressed == "Tridecagon" {
-            //MVP
-            //Take vertices out of your Abstraction
-            //Place vertices into drawView vertices
             drawView.vertices = tridecagon!.verts
-            //Stretch #1
-            //Take the color out of your Abstraction
-            //Place the color into drawView color
             drawView.lineColor = tridecagon!.color
-            //Stretch #2
-            //Take the name of the shape out of your Abstraction
-            //Place the name into the navigation title bar
             navigationItem.title = tridecagon!.name
         }
 
