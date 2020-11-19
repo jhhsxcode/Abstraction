@@ -158,13 +158,6 @@ class ViewController: UIViewController {
                 //MVP
                 //Create your abstraction
                 //Place vertices into your abstraction
-                enteredVertices.append(heptagon!.vertice1)
-                enteredVertices.append(heptagon!.vertice2)
-                enteredVertices.append(heptagon!.vertice3)
-                enteredVertices.append(heptagon!.vertice4)
-                enteredVertices.append(heptagon!.vertice5)
-                enteredVertices.append(heptagon!.vertice6)
-                enteredVertices.append(heptagon!.vertice7)
                 
                 //Stretch #1
                 //Take the name out of the textField
