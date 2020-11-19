@@ -14,12 +14,29 @@ initializer.
 import UIKit
 
 class Tridecagon {
-    var verts: [CGPoint]
+    var verts:[CGPoint] = []
     var color:UIColor
-    var name:String = "Tridecagon"
-    init(verts:[CGPoint],col:UIColor) {
+    var name:String
+    init(verts:[CGPoint],col:UIColor,name:String) {
         color = col
-        self.verts = verts
-        name = "Tridecagon"
+        if verts.count < 14 {
+            self.verts = verts
+        }
+        else {
+            self.verts.append(verts[0])
+            self.verts.append(verts[1])
+            self.verts.append(verts[2])
+            self.verts.append(verts[3])
+            self.verts.append(verts[4])
+            self.verts.append(verts[5])
+            self.verts.append(verts[6])
+            self.verts.append(verts[7])
+            self.verts.append(verts[8])
+            self.verts.append(verts[9])
+            self.verts.append(verts[10])
+            self.verts.append(verts[11])
+            self.verts.append(verts[12])
+        }
+        self.name = name
     }
 }
