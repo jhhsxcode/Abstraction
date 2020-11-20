@@ -195,8 +195,6 @@ class SecondViewController: UIViewController {
             drawView.lineColor = tridecagon!.color
             navigationItem.title = tridecagon!.name
         }
-
         view = drawView
     }
-
 }
