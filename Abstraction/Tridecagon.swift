@@ -19,10 +19,10 @@ class Tridecagon {
     var name:String
     init(verts:[CGPoint],col:UIColor,name:String) {
         color = col
-        if verts.count < 14 {
-            self.verts = verts
-        }
-        else {
+//        if verts.count < 14 {
+//            self.verts = verts
+//        }
+//        else {
             self.verts.append(verts[0])
             self.verts.append(verts[1])
             self.verts.append(verts[2])
@@ -36,7 +36,7 @@ class Tridecagon {
             self.verts.append(verts[10])
             self.verts.append(verts[11])
             self.verts.append(verts[12])
-        }
+//        }
         if name != "" {
             self.name = name
         }
