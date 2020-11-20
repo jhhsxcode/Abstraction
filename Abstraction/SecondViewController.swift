@@ -110,7 +110,7 @@ class SecondViewController: UIViewController {
             //MVP
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
-            
+            drawView.vertices = heptagon!.vertices
             //Stretch #1
             //Take the name of the shape out of your Abstraction
             //Place the name into the navigation title bar
