@@ -159,7 +159,7 @@ class ViewController: UIViewController {
                 //MVP
                 //Create your abstraction
                 //Place vertices into your abstraction
-                heptagon = Heptagon(vertices: enteredVertices)
+                heptagon = Heptagon(vertices: enteredVertices, shapeName: shapeNameTextField.text!)
                 
                 //Stretch #1
                 //Take the name out of the textField

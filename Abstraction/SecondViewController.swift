@@ -114,7 +114,7 @@ class SecondViewController: UIViewController {
             //Stretch #1
             //Take the name of the shape out of your Abstraction
             //Place the name into the navigation title bar
-            
+            navigationItem.title = heptagon!.shapeName
             //Stretch #2
             //Take the color out of your Abstraction
             //Place the color into drawView color

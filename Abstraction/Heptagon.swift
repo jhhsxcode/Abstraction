@@ -15,8 +15,10 @@ import UIKit
 
 class Heptagon {
     var vertices: [CGPoint]
+    var shapeName: String
     
-    init(vertices: [CGPoint]) {
+    init(vertices: [CGPoint], shapeName: String) {
         self.vertices = vertices
+        self.shapeName = shapeName
     }
 }
