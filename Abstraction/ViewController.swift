@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapView: UIView!
     
     var enteredVertices:[CGPoint] = []
-    
+    var colorCheck = 0
     @IBOutlet weak var segmentedController: UISegmentedControl!
     
     //MARK: - References Declared
@@ -69,6 +69,7 @@ class ViewController: UIViewController {
     
     @IBAction func whenSegmentChanged(_ sender: UISegmentedControl) {
         currentColor = colors[sender.selectedSegmentIndex]
+        colorCheck = 1
     }
     
     @IBAction func whenButtonPressed(_ sender: UIButton) {
@@ -226,18 +227,19 @@ class ViewController: UIViewController {
             }
             //MARK: - Tridecagon
             else if titleOfButtonPressed == "Tridecagon" {
-                //MVP
-                //Create your abstraction
-                //Place vertices into your abstraction
-                tridecagon = Tridecagon(verts: enteredVertices, col: currentColor, name: shapeNameTextField.text!)
-                //Stretch #1
-                //Take the name out of the textField
-                //Store the name of your shape in the abstraction
-                
-                //Stretch #2
-                //Take the color out of the segmented controller
-                //Place the color into your abstraction
-            } else {
+                if colorCheck == 0 {
+                    currentColor = .white
+                }
+                if enteredVertices.count == 13 {
+                    tridecagon = Tridecagon(verts: enteredVertices, col: currentColor, name: shapeNameTextField.text!)
+                }
+                if enteredVertices.count != 13 {
+                    let alert = UIAlertController(title: "ERROR", message: "Please Enter 13 Points", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    present(alert, animated: true, completion: nil)
+                }
+            }
+            else {
                 //MVP
                 //Create your abstraction
                 //Place vertices into your abstraction

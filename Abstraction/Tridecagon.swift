@@ -37,6 +37,11 @@ class Tridecagon {
             self.verts.append(verts[11])
             self.verts.append(verts[12])
         }
-        self.name = name
+        if name != "" {
+            self.name = name
+        }
+        else {
+            self.name = "Please Enter A Name"
+        }
     }
 }
