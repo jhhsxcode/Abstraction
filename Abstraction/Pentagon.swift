@@ -14,6 +14,12 @@ import UIKit
 
 class Pentagon {
     
-    //Your Code Here
-    
+    var NameOfShape: String
+    var vertices: [CGPoint]
+    var ColorOfLine: UIColor
+    init(vertices: [CGPoint]) {
+        self.vertices = vertices
+        NameOfShape = "Pentagon"
+        ColorOfLine = .red
+    }
 }
