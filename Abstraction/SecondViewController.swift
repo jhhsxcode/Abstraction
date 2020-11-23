@@ -120,6 +120,7 @@ class SecondViewController: UIViewController {
             //Stretch #2
             //Take the color out of your Abstraction
             //Place the color into drawView color
+            drawView.lineColor = heptagon!.shapeColor
         }
         //MARK: - Octagon
         if titleOfButtonPressed == "Octagon" {
