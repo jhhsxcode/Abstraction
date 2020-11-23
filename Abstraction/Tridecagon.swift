@@ -19,16 +19,11 @@ class Tridecagon {
     var name:String
     init(verts:[CGPoint],col:UIColor,name:String) {
         color = col
-        //        if verts.count < 14 {
-        //            self.verts = verts
-        //        }
-        //        else {
         var count = 0
         var verts1 = verts
         for i in verts {
             let x = i.x
             let y = i.y
-            //print(x,y)
             verts1[count] = CGPoint(x: x, y: y + 250)
             // Points shifted down 250 pixels to prevent naviagtion bar from covering them
             count += 1
@@ -46,7 +41,6 @@ class Tridecagon {
         self.verts.append(verts1[10])
         self.verts.append(verts1[11])
         self.verts.append(verts1[12])
-        //        }
         if name != "" {
             self.name = name
         }

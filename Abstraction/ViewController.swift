@@ -225,15 +225,19 @@ class ViewController: UIViewController {
             }
             //MARK: - Tridecagon
             else if titleOfButtonPressed == "Tridecagon" {
+                let alert = UIAlertController(title: "ERROR", message: "Please Select 13 Points", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 if colorCheck == 0 {
                     currentColor = .white
                 }
                 if enteredVertices.count == 13 {
                     tridecagon = Tridecagon(verts: enteredVertices, col: currentColor, name: shapeNameTextField.text!)
                 }
-                if enteredVertices.count != 13 {
-                    let alert = UIAlertController(title: "ERROR", message: "Please Enter 13 Points", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                if enteredVertices.count < 13 {
+                    present(alert, animated: true, completion: nil)
+                }
+                if enteredVertices.count > 13 {
+                    alert.message = "Please Only Select 13 Points"
                     present(alert, animated: true, completion: nil)
                 }
             }

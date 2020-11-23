@@ -200,4 +200,3 @@ class SecondViewController: UIViewController {
         view = drawView
     }
 }
-
