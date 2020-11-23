@@ -25,13 +25,13 @@ class Line {
     //Your Code Here
         var ValueX1 = Int(), ValueX2 = Int(), ValueY1 = Int(), ValueY2 = Int()
     
-    init(x: Int, y: Int) {
-        ValueX1 = Int()
-        ValueX2 = Int(Points[0].x)
-        ValueY1 = Int(Points[1].y)
+    init(Points: [CGPoint]) {
+        ValueY2 = Int(Points[0].x)
+        ValueX2 = Int(Points[0].y)
+        ValueY1 = Int(Points[1].x)
         ValueY2 = Int(Points[1].y)
     }
-    func returnPoint() -> CGPoint {
-        (x:ValueX1,y:ValueY2)
+    func returnPoint() -> [CGPoint] {
+        return [CGPoint(x: ValueX1,y: ValueY1),CGPoint(x: ValueX2,y: ValueY2)]
     }
 }
