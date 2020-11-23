@@ -100,6 +100,7 @@ class ViewController: UIViewController {
             }
             //MARK: - Triangle
             else if titleOfButtonPressed == "Triangle"{
+                triangle = Triangle(vertices: enteredVertices)
                 //MVP
                 //Create your abstraction
                 //Place vertices into your abstraction
@@ -129,8 +130,7 @@ class ViewController: UIViewController {
             //MARK: - Pentagon
             else if titleOfButtonPressed == "Pentagon" {
                 //MVP
-                //Create your abstraction
-                //Place vertices into your abstraction
+                pentagon = Pentagon(vertices: enteredVertices)
                 
                 //Stretch #1
                 //Take the name out of the textField

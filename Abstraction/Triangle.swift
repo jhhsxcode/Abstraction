@@ -14,6 +14,15 @@ import UIKit
 
 class Triangle {
     
-    //Your Code Here
+    var vertices: [CGPoint]
+    var lineColor: UIColor
+    var shapeName: String
     
+    init(vertices: [CGPoint]) {
+        self.vertices = vertices
+        
+        lineColor = .green
+        shapeName = "Triangle"
+    
+    }
 }
