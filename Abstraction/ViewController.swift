@@ -88,7 +88,10 @@ class ViewController: UIViewController {
                 //MVP
                 //Create your abstraction
                 //Place vertices into your abstraction
-                
+//                class points{
+//                    var ValueX1 = Int(), ValueX2 = Int.self, ValueY1 = Int.self, ValueY2 = Int.self
+//
+//                }
                 //Stretch #1
                 //Take the name out of the textField
                 //Store the name of your shape in the abstraction
