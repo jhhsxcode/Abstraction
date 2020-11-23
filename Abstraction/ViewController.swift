@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapView: UIView!
     
     var enteredVertices:[CGPoint] = []
-    
+    var colorCheck = 0
     @IBOutlet weak var segmentedController: UISegmentedControl!
     
     //MARK: - References Declared
@@ -69,6 +69,7 @@ class ViewController: UIViewController {
     
     @IBAction func whenSegmentChanged(_ sender: UISegmentedControl) {
         currentColor = colors[sender.selectedSegmentIndex]
+        colorCheck = 1
     }
     
     @IBAction func whenButtonPressed(_ sender: UIButton) {
@@ -144,9 +145,7 @@ class ViewController: UIViewController {
             }
             //MARK: - Hexagon
             else if titleOfButtonPressed == "Hexagon" {
-                //MVP
-                //Create your abstraction
-                //Place vertices into your abstraction
+                hexagon = Hexagon(vertices: enteredVertices)
                 
                 //Stretch #1
                 //Take the name out of the textField
@@ -161,6 +160,7 @@ class ViewController: UIViewController {
                 //MVP
                 //Create your abstraction
                 //Place vertices into your abstraction
+                heptagon = Heptagon(vertices: enteredVertices, shapeName: shapeNameTextField.text!, shapeColor: currentColor)
                 
                 //Stretch #1
                 //Take the name out of the textField
@@ -228,18 +228,23 @@ class ViewController: UIViewController {
             }
             //MARK: - Tridecagon
             else if titleOfButtonPressed == "Tridecagon" {
-                //MVP
-                //Create your abstraction
-                //Place vertices into your abstraction
-                
-                //Stretch #1
-                //Take the name out of the textField
-                //Store the name of your shape in the abstraction
-                
-                //Stretch #2
-                //Take the color out of the segmented controller
-                //Place the color into your abstraction
-            } else {
+                let alert = UIAlertController(title: "ERROR", message: "Please Select 13 Points", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                if colorCheck == 0 {
+                    currentColor = .white
+                }
+                if enteredVertices.count == 13 {
+                    tridecagon = Tridecagon(verts: enteredVertices, col: currentColor, name: shapeNameTextField.text!)
+                }
+                if enteredVertices.count < 13 {
+                    present(alert, animated: true, completion: nil)
+                }
+                if enteredVertices.count > 13 {
+                    alert.message = "Please Only Select 13 Points"
+                    present(alert, animated: true, completion: nil)
+                }
+            }
+            else {
                 //MVP
                 //Create your abstraction
                 //Place vertices into your abstraction

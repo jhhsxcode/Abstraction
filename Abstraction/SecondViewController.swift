@@ -93,9 +93,11 @@ class SecondViewController: UIViewController {
         }
         //MARK: - Hexagon
         if titleOfButtonPressed == "Hexagon" {
-            //MVP
-            //Take vertices out of your Abstraction
-            //Place vertices into drawView vertices
+            if titleOfButtonPressed == "Hexagon" {
+            if let hexagon = hexagon {
+                 drawView.vertices = hexagon.vertices
+             }
+            }
             
             //Stretch #1
             //Take the name of the shape out of your Abstraction
@@ -110,14 +112,15 @@ class SecondViewController: UIViewController {
             //MVP
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
-            
+            drawView.vertices = heptagon!.vertices
             //Stretch #1
             //Take the name of the shape out of your Abstraction
             //Place the name into the navigation title bar
-            
+            navigationItem.title = heptagon!.shapeName
             //Stretch #2
             //Take the color out of your Abstraction
             //Place the color into drawView color
+            drawView.lineColor = heptagon!.shapeColor
         }
         //MARK: - Octagon
         if titleOfButtonPressed == "Octagon" {
@@ -191,21 +194,10 @@ class SecondViewController: UIViewController {
         }
         //MARK: - Tridecagon
         if titleOfButtonPressed == "Tridecagon" {
-            //MVP
-            //Take vertices out of your Abstraction
-            //Place vertices into drawView vertices
             drawView.vertices = tridecagon!.verts
-            //Stretch #1
-            //Take the color out of your Abstraction
-            //Place the color into drawView color
             drawView.lineColor = tridecagon!.color
-            //Stretch #2
-            //Take the name of the shape out of your Abstraction
-            //Place the name into the navigation title bar
             navigationItem.title = tridecagon!.name
         }
-
         view = drawView
     }
-
 }
