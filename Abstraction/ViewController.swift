@@ -100,6 +100,7 @@ class ViewController: UIViewController {
             }
             //MARK: - Triangle
             else if titleOfButtonPressed == "Triangle"{
+                triangle = Triangle(vertices: enteredVertices)
                 //MVP
                 //Create your abstraction
                 //Place vertices into your abstraction

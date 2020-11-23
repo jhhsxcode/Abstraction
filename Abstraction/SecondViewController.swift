@@ -50,7 +50,12 @@ class SecondViewController: UIViewController {
             //Place the color into drawView color
         }
         //MARK: - Triangle
-        else if titleOfButtonPressed == "Triangle" {
+        if titleOfButtonPressed == "Triangle" {
+            if titleOfButtonPressed == "Triangle" {
+                if let triangle = triangle {
+                 drawView.vertices = triangle.vertices
+             }
+            }
             //MVP
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
