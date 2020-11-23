@@ -85,8 +85,11 @@ class SecondViewController: UIViewController {
         //MARK: - Pentagon
         else if titleOfButtonPressed == "Pentagon" {
             //MVP
-            //Take vertices out of your Abstraction
-            //Place vertices into drawView vertices
+                if let pentagon = pentagon{
+                    drawView.vertices = pentagon.vertices
+            }
+                
+                    
             
             //Stretch #1
             //Take the name of the shape out of your Abstraction
