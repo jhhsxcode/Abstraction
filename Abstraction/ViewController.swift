@@ -142,9 +142,7 @@ class ViewController: UIViewController {
             }
             //MARK: - Hexagon
             else if titleOfButtonPressed == "Hexagon" {
-                //MVP
-                //Create your abstraction
-                //Place vertices into your abstraction
+                hexagon = Hexagon(vertices: enteredVertices)
                 
                 //Stretch #1
                 //Take the name out of the textField

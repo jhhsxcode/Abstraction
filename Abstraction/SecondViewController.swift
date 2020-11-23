@@ -93,9 +93,11 @@ class SecondViewController: UIViewController {
         }
         //MARK: - Hexagon
         if titleOfButtonPressed == "Hexagon" {
-            //MVP
-            //Take vertices out of your Abstraction
-            //Place vertices into drawView vertices
+            if titleOfButtonPressed == "Hexagon" {
+            if let hexagon = hexagon {
+                 drawView.vertices = hexagon.vertices
+             }
+            }
             
             //Stretch #1
             //Take the name of the shape out of your Abstraction
@@ -198,3 +200,4 @@ class SecondViewController: UIViewController {
         view = drawView
     }
 }
+
