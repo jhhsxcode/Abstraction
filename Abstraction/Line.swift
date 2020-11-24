@@ -23,12 +23,12 @@ import UIKit
 
 class Line {
     //Your Code Here
-        var ValueX1 = Int(), ValueX2 = Int(), ValueY1 = Int(), ValueY2 = Int()
+    var ValueX1: Int = 0, ValueX2: Int = 0, ValueY1: Int = 0, ValueY2: Int = 0
     
     init(Points: [CGPoint]) {
-        ValueY2 = Int(Points[0].x)
-        ValueX2 = Int(Points[0].y)
-        ValueY1 = Int(Points[1].x)
+        ValueX1 = Int(Points[0].x)
+        ValueY1 = Int(Points[0].y)
+        ValueX2 = Int(Points[1].x)
         ValueY2 = Int(Points[1].y)
     }
     func returnPoint() -> [CGPoint] {

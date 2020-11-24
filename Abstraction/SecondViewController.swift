@@ -37,7 +37,9 @@ class SecondViewController: UIViewController {
         
         //MARK: - Line
         if titleOfButtonPressed == "Line" {
-            drawView.vertices = line?.returnPoint()
+            if let line = line {
+            drawView.vertices = line.returnPoint()
+            }
             //MVP
             //Take vertices out of your Abstraction
             //Place vertices into drawView vertices
